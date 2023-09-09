@@ -1,6 +1,6 @@
-import 'package:dribbox/src/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'src/screens/screens.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
