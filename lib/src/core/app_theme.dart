@@ -1,4 +1,5 @@
 import 'package:dribbox/src/core/app_colors.dart';
+import 'package:dribbox/src/core/responsive.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
@@ -11,15 +12,15 @@ class AppTheme {
       fontFamily: 'Gilroy');
 
   static Text gilroyText(String text, BuildContext context,
-      {FontWeight? fontWeight, double? size, Color? textColor}) {
+      {FontWeight? fontWeight, double? size, Color? textColor, double? lineheight}) {
     return Text(
       text,
       style: TextStyle(
-        fontFamily: 'Gilroy',
-        fontSize: size,
-        fontWeight: fontWeight,
-        color: textColor,
-      ),
+          fontFamily: 'Gilroy',
+          fontSize: SizeConfig.text(size!),
+          fontWeight: fontWeight,
+          color: textColor,
+          height: lineheight),
     );
   }
 
@@ -29,7 +30,7 @@ class AppTheme {
       text,
       style: TextStyle(
         fontFamily: 'Avenir',
-        fontSize: size,
+        fontSize: SizeConfig.text(size!),
         fontWeight: fontWeight,
         color: textColor,
       ),
