@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 @immutable
 class AssetPath {
   const AssetPath._();
-  static const String assetPath = 'assets/icons/';
+  static const String assetPath = 'assets/svgs/';
   static const String avatar = '${assetPath}avatar.svg';
   static const String bg = '${assetPath}bg.svg';
   static const String facebook = '${assetPath}facebook.svg';
@@ -17,4 +17,5 @@ class AssetPath {
   static const String sort = '${assetPath}sort.svg';
   static const String word = '${assetPath}word.svg';
   static const String click = '${assetPath}click.svg';
+  static const String moon = '${assetPath}moon.svg';
 }
