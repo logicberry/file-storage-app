@@ -1,3 +1,4 @@
+import 'package:dribbox/src/core/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'src/screens/screens.dart';
@@ -16,10 +17,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
-      child: const MaterialApp(
+      child: MaterialApp(
         title: 'Dribbox',
         debugShowCheckedModeBanner: false,
-        home: LoginScreen(),
+        theme: AppTheme.theme,
+        home: const LoginScreen(),
       ),
     );
   }

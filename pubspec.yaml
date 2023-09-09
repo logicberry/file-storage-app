@@ -22,14 +22,22 @@ flutter:
   uses-material-design: true
 
   assets:
-  - assets/images/
-  - assets/svgs/
-  # fonts:
-  #   - family: Manrope
-  #     fonts:
-  #       - asset: assets/fonts/Manrope-Regular.ttf
-  #         weight: 400
-  #       - asset: assets/fonts/Manrope-Medium.ttf
-  #         weight: 500
-  #       - asset: assets/fonts/Manrope-Bold.ttf
-  #         weight: 700
+    - assets/svgs/
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/Gilroy-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Gilroy-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Gilroy-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Gilroy-Bold.ttf
+          weight: 700
+
+    - family: Avenir
+      fonts:
+        - asset: assets/fonts/Avenir-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Avenir-SemiBold.otf
+          weight: 600
