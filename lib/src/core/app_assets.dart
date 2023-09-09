@@ -19,4 +19,6 @@ class AssetPath {
   static const String word = '${assetPath}word.svg';
   static const String click = '${assetPath}click.svg';
   static const String moon = '${assetPath}moon.svg';
+  static const String box = '${assetPath}box.svg';
+  static const String union = '${assetPath}union.svg';
 }

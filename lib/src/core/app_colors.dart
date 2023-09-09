@@ -20,4 +20,5 @@ class AppColors {
   static const Color pink = Color(0xFFFF317B);
   static const Color lime = Color(0xFF34DEDE);
   static const Color darkLime = Color(0xFF23B0B0);
+  static const Color border = Color(0xFFEEF2FE);
 }
