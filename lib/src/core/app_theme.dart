@@ -12,9 +12,10 @@ class AppTheme {
       fontFamily: 'Gilroy');
 
   static Text gilroyText(String text, BuildContext context,
-      {FontWeight? fontWeight, double? size, Color? textColor, double? lineheight}) {
+      {FontWeight? fontWeight, double? size, Color? textColor, double? lineheight, TextAlign? textAlign}) {
     return Text(
       text,
+      textAlign: textAlign,
       style: TextStyle(
           fontFamily: 'Gilroy',
           fontSize: SizeConfig.text(size!),

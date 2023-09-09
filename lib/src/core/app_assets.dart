@@ -8,6 +8,7 @@ class AssetPath {
   static const String bg = '${assetPath}bg.svg';
   static const String facebook = '${assetPath}facebook.svg';
   static const String folder = '${assetPath}folder.svg';
+  static const String foldertop = '${assetPath}foldertop.svg';
   static const String instagram = '${assetPath}instagram.svg';
   static const String logout = '${assetPath}logout.svg';
   static const String menu = '${assetPath}menu.svg';
