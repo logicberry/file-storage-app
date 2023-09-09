@@ -7,11 +7,14 @@ import '../core/dimension.dart';
 
 class FileBox extends StatelessWidget {
   final Color backgroundColor, color, topColor;
+  final String title, subtitle;
   const FileBox(
       {super.key,
       required this.color,
       required this.backgroundColor,
-      required this.topColor});
+      required this.topColor,
+      required this.title,
+      required this.subtitle});
 
   @override
   Widget build(BuildContext context) {
@@ -42,16 +45,16 @@ class FileBox extends StatelessWidget {
                 ]),
                 Icon(
                   Icons.more_vert,
-                  color: color,
+                  color: topColor,
                 )
               ],
             ),
             Space.height(context, 10),
-            AppTheme.gilroyText('Mobile Apps', context,
-                size: 15, textColor: color, fontWeight: FontWeight.w600),
+            AppTheme.gilroyText(title, context,
+                size: 15, textColor: topColor, fontWeight: FontWeight.w600),
             Space.height(context, 2),
-            AppTheme.gilroyText('January 20 2023', context,
-                size: 10, textColor: color),
+            AppTheme.gilroyText(subtitle, context,
+                size: 10, textColor: topColor),
           ],
         ),
       ),
