@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import '../core/core.dart';
 
 class DBTextField extends StatelessWidget {
-  final String hintText, labeltext;
+  final String? hintText, labeltext;
   final TextEditingController? controller;
   final Widget? icon, prefix;
   final TextInputType? inputType;
   const DBTextField(
       {super.key,
-      required this.hintText,
+      this.hintText,
       this.controller,
       this.inputType,
       required this.labeltext,
@@ -34,17 +34,14 @@ class DBTextField extends StatelessWidget {
         keyboardType: inputType ?? TextInputType.text,
         textInputAction: TextInputAction.next,
         decoration: InputDecoration(
-            hintText: 'Search Folder',
+            hintText: hintText ?? 'Search Folder',
             contentPadding: const EdgeInsets.all(5),
             hintStyle: const TextStyle(
                 fontFamily: 'Gilroy',
                 fontSize: 15,
                 fontWeight: FontWeight.w600,
                 color: AppColors.primaryColor),
-            prefixIcon: const Icon(
-              Icons.search,
-              color: AppColors.primaryColor,
-            ),
+            prefixIcon: prefix,
             border: customOutlineInputBorder,
             enabledBorder: customOutlineInputBorder,
             focusedBorder: customOutlineInputBorder),

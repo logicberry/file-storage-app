@@ -31,7 +31,14 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 Space.height(context, 30),
-                const DBTextField(hintText: 'Search', labeltext: ''),
+                const DBTextField(
+                  hintText: 'Search',
+                  labeltext: '',
+                  prefix: Icon(
+                    Icons.search,
+                    color: AppColors.primaryColor,
+                  ),
+                ),
                 Space.height(context, 25),
                 Row(
                   children: [
