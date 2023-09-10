@@ -3,7 +3,6 @@ import 'package:dribbox/src/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../core/app_theme.dart';
 import '../core/core.dart';
 
 class SideMenu extends StatefulWidget {
@@ -47,11 +46,9 @@ class _SideMenuState extends State<SideMenu> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: AppColors.drawerColor,
-      width: double.infinity,
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
+        backgroundColor: AppColors.drawerColor,
+        width: double.infinity,
+        child: ListView(padding: EdgeInsets.zero, children: [
           DrawerHeader(
             padding: EdgeInsets.zero,
             child: Row(
@@ -132,8 +129,23 @@ class _SideMenuState extends State<SideMenu> {
             isSelected: selectedItemIndex == 6,
             onTap: () => selectItem(6),
           ),
-        ],
-      ),
-    );
+          Space.height(context, 50),
+          ListTile(
+            minLeadingWidth: 0,
+            contentPadding: const EdgeInsets.only(left: 24),
+            leading: SvgPicture.asset(AssetPath.logout),
+            title: AppTheme.gilroyText('Logout', context,
+                size: 16,
+                textColor: AppColors.primaryColor,
+                fontWeight: FontWeight.w700),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 25),
+            child: AppTheme.gilroyText('Version 2.0.1', context,
+                size: 10,
+                textColor: AppColors.primaryColor,
+                fontWeight: FontWeight.w500),
+          ),
+        ]));
   }
 }
