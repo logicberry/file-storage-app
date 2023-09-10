@@ -6,16 +6,18 @@ import '../core/core.dart';
 class FolderDetails extends StatelessWidget {
   final Color color;
   final String title, subtitle;
+  final double value;
   const FolderDetails({
     super.key,
     required this.color,
     required this.title,
-    required this.subtitle,
+    required this.subtitle, required this.value,
   });
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      dense: true,
       contentPadding: const EdgeInsets.all(0),
       minLeadingWidth: 0,
       horizontalTitleGap: 10,
@@ -42,7 +44,7 @@ class FolderDetails extends StatelessWidget {
         width: SizeConfig.width(120),
         child: LinearProgressIndicator(
           backgroundColor: color,
-          value: 0.4,
+          value: value,
           valueColor: const AlwaysStoppedAnimation<Color>(AppColors.lightBlue),
           borderRadius: const BorderRadius.all(Radius.circular(20)),
         ),
