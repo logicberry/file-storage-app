@@ -6,6 +6,8 @@ import '../core/core.dart';
 import '../core/dimension.dart';
 
 class SettingsScreen extends StatelessWidget {
+     static const String routeName = '/settings-screen';
+
   const SettingsScreen({super.key});
 
   @override

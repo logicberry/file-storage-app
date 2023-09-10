@@ -23,7 +23,19 @@ class _SideMenuState extends State<SideMenu> {
       selectedItemIndex = index;
     });
 
-    
+    switch (index) {
+      case 0:
+        Navigator.pushNamed(context, HomeScreen.routeName);
+        break;
+      case 1:
+        Navigator.pushNamed(context, ProfileScreen.routeName);
+
+        break;
+      case 2:
+        Navigator.pushNamed(context, StorageDetailsScreen.routeName);
+
+        break;
+    }
   }
 
   @override

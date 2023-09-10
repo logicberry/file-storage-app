@@ -1,6 +1,7 @@
 import 'package:dribbox/src/components/menu.dart';
 import 'package:dribbox/src/components/textfield.dart';
 import 'package:dribbox/src/core/core.dart';
+import 'package:dribbox/src/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -9,7 +10,7 @@ import '../core/app_theme.dart';
 import '../core/dimension.dart';
 
 class HomeScreen extends StatefulWidget {
-   static const String routeName = '/home-screen';
+  static const String routeName = '/home-screen';
   const HomeScreen({super.key});
 
   @override
@@ -160,7 +161,8 @@ class _HomeScreenState extends State<HomeScreen> {
               bottom: 60,
               right: 16.0,
               child: FloatingActionButton(
-                onPressed: () {},
+                onPressed: () =>
+                    Navigator.pushNamed(context, ProfileScreen.routeName),
                 backgroundColor: AppColors.primaryColor,
                 child: const Icon(
                   Icons.add,

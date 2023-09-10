@@ -9,6 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class ProfileScreen extends StatefulWidget {
+  static const String routeName = '/profile-screen';
+
   const ProfileScreen({super.key});
 
   @override
@@ -22,7 +24,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   void initState() {
     super.initState();
-    _timer = Timer.periodic(const Duration(seconds: 10), (timer) {
+    _timer = Timer.periodic(const Duration(seconds: 5), (timer) {
       setState(() {
         _currentColor = (_currentColor == AppColors.primaryColor)
             ? Colors.white
@@ -55,13 +57,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Space.height(context, 20),
                 Stack(children: [
                   Material(
-                    elevation: (_currentColor == Colors.white) ? 4.0 : 0.0,
+                    borderRadius: BorderRadius.circular(20),
+                    elevation: (_currentColor == Colors.white) ? 0.5 : 0.0,
                     child: Container(
                       height: SizeConfig.height(209),
                       width: double.infinity,
                       decoration: BoxDecoration(
-                          color: _currentColor,
-                          borderRadius: BorderRadius.circular(20)),
+                        color: _currentColor,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                       child: Padding(
                         padding: const EdgeInsets.all(20.0),
                         child: Column(

@@ -5,12 +5,13 @@ import '../core/core.dart';
 class DbButtton extends StatelessWidget {
   final Widget child;
   final Color color;
-  const DbButtton({super.key, required this.child, required this.color});
+  final VoidCallback onTap;
+  const DbButtton({super.key, required this.child, required this.color, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onTap,
       style: ElevatedButton.styleFrom(
           elevation: 0,
           backgroundColor: color,

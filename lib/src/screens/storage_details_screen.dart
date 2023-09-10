@@ -8,6 +8,8 @@ import '../core/core.dart';
 import '../core/dimension.dart';
 
 class StorageDetailsScreen extends StatelessWidget {
+     static const String routeName = '/storagedetails-screen';
+
   const StorageDetailsScreen({super.key});
 
   @override

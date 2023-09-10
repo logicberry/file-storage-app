@@ -7,6 +7,8 @@ import '../core/core.dart';
 import '../core/dimension.dart';
 
 class ChangePasswordScreen extends StatelessWidget {
+     static const String routeName = '/changepassword-screen';
+
   const ChangePasswordScreen({super.key});
 
   @override

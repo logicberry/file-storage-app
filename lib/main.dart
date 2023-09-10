@@ -1,9 +1,11 @@
 import 'package:device_preview/device_preview.dart';
+import 'package:dribbox/router.dart';
 import 'package:dribbox/src/core/app_theme.dart';
-import 'package:dribbox/src/screens/home.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'src/screens/screens.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +32,8 @@ class MyApp extends StatelessWidget {
         title: 'Dribbox',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.theme,
-        home: const HomeScreen(),
+        onGenerateRoute: (settings) => generateRoute(settings),
+        home: const LoginScreen(),
       ),
     );
   }

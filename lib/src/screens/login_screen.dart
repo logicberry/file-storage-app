@@ -1,5 +1,6 @@
 import 'package:dribbox/src/components/button.dart';
 import 'package:dribbox/src/core/core.dart';
+import 'package:dribbox/src/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -7,7 +8,7 @@ import '../core/app_theme.dart';
 import '../core/dimension.dart';
 
 class LoginScreen extends StatelessWidget {
-   static const String routeName = '/login-screen';
+  static const String routeName = '/login-screen';
   const LoginScreen({super.key});
 
   @override
@@ -91,6 +92,8 @@ class LoginScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     DbButtton(
+                        onTap: () =>
+                            Navigator.pushNamed(context, HomeScreen.routeName),
                         color: AppColors.lightBlue,
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -103,6 +106,8 @@ class LoginScreen extends StatelessWidget {
                                   textColor: AppColors.blue),
                             ])),
                     DbButtton(
+                        onTap: () =>
+                            Navigator.pushNamed(context, HomeScreen.routeName),
                         color: AppColors.blue,
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
