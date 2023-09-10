@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
+import 'src/core/app_theme.dart';
 import 'src/screens/screens.dart';
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
@@ -57,10 +58,13 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     default:
       return MaterialPageRoute(
         settings: routeSettings,
-        builder: (_) => const Scaffold(
+        builder: (_) => Scaffold(
           body: Center(
-            child: Text('Screen no dey 😒'),
-          ),
+              child: AppTheme.gilroyText(
+                  'Screen no dey 😒',
+                  size: 20,
+                  _,
+                  fontWeight: FontWeight.w500)),
         ),
       );
   }

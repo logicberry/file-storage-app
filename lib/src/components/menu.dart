@@ -1,12 +1,10 @@
 import 'package:dribbox/src/components/navitem.dart';
-import 'package:dribbox/src/screens/home.dart';
+import 'package:dribbox/src/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../core/app_theme.dart';
 import '../core/core.dart';
-import '../screens/profile_screen.dart';
-import '../screens/storage_details_screen.dart';
 
 class SideMenu extends StatefulWidget {
   const SideMenu({super.key});
@@ -33,6 +31,14 @@ class _SideMenuState extends State<SideMenu> {
         break;
       case 2:
         Navigator.pushNamed(context, StorageDetailsScreen.routeName);
+
+        break;
+      case 3 || 4 || 6:
+        Navigator.pushNamed(context, "/m");
+
+        break;
+      case 5:
+        Navigator.pushNamed(context, SettingsScreen.routeName);
 
         break;
     }
