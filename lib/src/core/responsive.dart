@@ -12,6 +12,7 @@ class SizeConfig {
   }
 
   static double get screenWidth => 1.sw;
+  static double get screenHeight => 1.sw;
   static height(double height) => height.h;
   static width(double width) => width.w;
   static text(double size) => size.sp;

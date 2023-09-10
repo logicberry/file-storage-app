@@ -1,3 +1,4 @@
+import 'package:dribbox/src/components/menu.dart';
 import 'package:dribbox/src/components/textfield.dart';
 import 'package:dribbox/src/core/core.dart';
 import 'package:flutter/material.dart';
@@ -7,13 +8,23 @@ import '../components/file_box.dart';
 import '../core/app_theme.dart';
 import '../core/dimension.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+   static const String routeName = '/home-screen';
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
     SizeConfig.init(context);
     return Scaffold(
+      key: _scaffoldKey,
+      drawer: const SideMenu(),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 20),
@@ -27,7 +38,11 @@ class HomeScreen extends StatelessWidget {
                         size: 24,
                         fontWeight: FontWeight.w600,
                         textColor: AppColors.primaryColor),
-                    SvgPicture.asset(AssetPath.menu)
+                    GestureDetector(
+                        onTap: () {
+                          _scaffoldKey.currentState?.openDrawer();
+                        },
+                        child: SvgPicture.asset(AssetPath.menu))
                   ],
                 ),
                 Space.height(context, 30),

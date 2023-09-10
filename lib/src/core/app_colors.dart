@@ -21,4 +21,5 @@ class AppColors {
   static const Color lime = Color(0xFF34DEDE);
   static const Color darkLime = Color(0xFF23B0B0);
   static const Color border = Color(0xFFEEF2FE);
+  static const Color drawerColor = Color(0xFFF1F3F6);
 }

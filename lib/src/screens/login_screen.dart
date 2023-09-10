@@ -7,6 +7,7 @@ import '../core/app_theme.dart';
 import '../core/dimension.dart';
 
 class LoginScreen extends StatelessWidget {
+   static const String routeName = '/login-screen';
   const LoginScreen({super.key});
 
   @override
