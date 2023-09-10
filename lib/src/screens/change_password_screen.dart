@@ -2,9 +2,7 @@ import 'package:dribbox/src/components/textfield.dart';
 import 'package:flutter/material.dart';
 
 import '../components/custom_appbar.dart';
-import '../core/app_theme.dart';
 import '../core/core.dart';
-import '../core/dimension.dart';
 
 class ChangePasswordScreen extends StatelessWidget {
      static const String routeName = '/changepassword-screen';

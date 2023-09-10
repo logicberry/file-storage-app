@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../components/file_box.dart';
-import '../core/app_theme.dart';
-import '../core/dimension.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = '/home-screen';

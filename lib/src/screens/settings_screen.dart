@@ -2,9 +2,7 @@ import 'package:dribbox/src/components/custom_appbar.dart';
 import 'package:dribbox/src/screens/change_password_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../core/app_theme.dart';
 import '../core/core.dart';
-import '../core/dimension.dart';
 
 class SettingsScreen extends StatelessWidget {
   static const String routeName = '/settings-screen';

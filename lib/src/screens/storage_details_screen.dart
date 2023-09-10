@@ -3,9 +3,7 @@ import 'package:dribbox/src/components/custom_appbar.dart';
 import 'package:flutter/material.dart';
 
 import '../components/folder_details.dart';
-import '../core/app_theme.dart';
 import '../core/core.dart';
-import '../core/dimension.dart';
 
 class StorageDetailsScreen extends StatelessWidget {
   static const String routeName = '/storagedetails-screen';

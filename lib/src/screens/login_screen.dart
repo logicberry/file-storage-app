@@ -4,9 +4,6 @@ import 'package:dribbox/src/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../core/app_theme.dart';
-import '../core/dimension.dart';
-
 class LoginScreen extends StatelessWidget {
   static const String routeName = '/login-screen';
   const LoginScreen({super.key});

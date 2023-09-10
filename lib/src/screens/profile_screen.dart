@@ -2,9 +2,7 @@ import 'dart:async';
 
 import 'package:dribbox/src/components/custom_appbar.dart';
 import 'package:dribbox/src/components/file_box.dart';
-import 'package:dribbox/src/core/app_theme.dart';
 import 'package:dribbox/src/core/core.dart';
-import 'package:dribbox/src/core/dimension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
