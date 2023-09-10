@@ -1,5 +1,6 @@
 import 'package:dribbox/src/core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 import '../core/app_theme.dart';
 
@@ -33,7 +34,8 @@ class DbAppBar extends StatelessWidget implements PreferredSizeWidget {
           centerTitle: true,
           leading: implyLeading
               ? IconButton(
-                  onPressed: ontap ?? () => Navigator.pop(context),
+                  onPressed: ontap ??
+                      () => Navigator.pop(context, PageTransitionType.fade),
                   icon: const Icon(Icons.arrow_back_ios,
                       color: AppColors.primaryColor),
                 )

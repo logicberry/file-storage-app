@@ -8,7 +8,7 @@ import '../core/core.dart';
 import '../core/dimension.dart';
 
 class StorageDetailsScreen extends StatelessWidget {
-     static const String routeName = '/storagedetails-screen';
+  static const String routeName = '/storagedetails-screen';
 
   const StorageDetailsScreen({super.key});
 
@@ -37,6 +37,7 @@ class StorageDetailsScreen extends StatelessWidget {
                   Space.height(context, 8),
                   AppTheme.gilroyText('Total 128 GB', context,
                       size: 20, textColor: AppColors.primaryColor),
+                  Space.height(context, 15),
                   const FolderDetails(
                     value: 0.4,
                     color: AppColors.primaryColor,

@@ -1,4 +1,5 @@
 import 'package:dribbox/src/components/custom_appbar.dart';
+import 'package:dribbox/src/screens/change_password_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../core/app_theme.dart';
@@ -6,7 +7,7 @@ import '../core/core.dart';
 import '../core/dimension.dart';
 
 class SettingsScreen extends StatelessWidget {
-     static const String routeName = '/settings-screen';
+  static const String routeName = '/settings-screen';
 
   const SettingsScreen({super.key});
 
@@ -34,10 +35,14 @@ class SettingsScreen extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 textColor: AppColors.primaryColor),
             Space.height(context, 30),
-            AppTheme.gilroyText('Change Password', context,
-                size: 16,
-                fontWeight: FontWeight.w500,
-                textColor: AppColors.primaryColor),
+            GestureDetector(
+              onTap: () =>
+                  Navigator.pushNamed(context, ChangePasswordScreen.routeName),
+              child: AppTheme.gilroyText('Change Password', context,
+                  size: 16,
+                  fontWeight: FontWeight.w500,
+                  textColor: AppColors.primaryColor),
+            ),
             Space.height(context, 30),
             AppTheme.gilroyText('Change Language', context,
                 size: 16,
