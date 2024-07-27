@@ -4,7 +4,6 @@ import 'package:dribbox/src/core/app_theme.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'src/screens/screens.dart';
 
 void main() {
@@ -15,7 +14,7 @@ void main() {
     DevicePreview(
       enabled: !kReleaseMode,
       builder: (context) => const MyApp(),
-    ),
+    )
   );
 }
 
