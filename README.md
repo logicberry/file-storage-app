@@ -6,11 +6,11 @@ A simple and intuitive file storage app UI designed with Flutter. Provides a cle
 ## 📸 Screen Shots
 
 <p float="left">
-<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file1.png?raw=true" width="300">
-<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file2.png?raw=true" width="300">
-<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file3.png?raw=true" width="300">
-<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file4.png?raw=true" width="300">
-<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file5.png?raw=true" width="300">
+<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file1.png?raw=true" width="200">
+<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file2.png?raw=true" width="200">
+<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file3.png?raw=true" width="200">
+<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file4.png?raw=true" width="200">
+<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file5.png?raw=true" width="200">
 </p>
 
 
