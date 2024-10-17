@@ -6,11 +6,11 @@ A simple and intuitive file storage app UI designed with Flutter. Provides a cle
 ## 📸 Screen Shots
 
 <p float="left">
-<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file1.png?raw=true" width="200">
-<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file2.png?raw=true" width="200">
-<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file3.png?raw=true" width="200">
-<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file4.png?raw=true" width="200">
-<img src="https://github.com/malikrasaq/file-storage-app/blob/master/screenshots/file5.png?raw=true" width="200">
+<img src="https://github.com/logicberry/file-storage-app/blob/master/screenshots/file1.png?raw=true" width="200">
+<img src="https://github.com/logicberry/file-storage-app/blob/master/screenshots/file2.png?raw=true" width="200">
+<img src="https://github.com/logicberry/file-storage-app/blob/master/screenshots/file3.png?raw=true" width="200">
+<img src="https://github.com/logicberry/file-storage-app/blob/master/screenshots/file4.png?raw=true" width="200">
+<img src="https://github.com/logicberry/file-storage-app/blob/master/screenshots/file5.png?raw=true" width="200">
 </p>
 
 
@@ -44,6 +44,13 @@ flutter run
 ## Authors
 
 - [@malikrasaq](https://www.github.com/malikrasaq)
+
+## Acknowledgements
+
+ - [Design Inspiration](https://www.figma.com/design/WE1I3GkaLYjSzpDmrJec1x/dribbox-online-cloud-storage-for-figma?m=auto&t=oni1eJSqYiEvYjLU-6)
+  
+
+
 
 
 ## Badges
